@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YT_AboutApp">
+            <connections>
+                <outlet property="aboutAppTableV" destination="y6v-PI-ivz" id="MlC-2y-nYL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon60" translatesAutoresizingMaskIntoConstraints="NO" id="2if-hl-sxv">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="Zmm-7g-Pyc">
+                            <variation key="heightClass=regular-widthClass=compact" constant="65"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="90" id="wxw-9z-L1k">
+                            <variation key="heightClass=regular-widthClass=compact" constant="65"/>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="7"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zmm-7g-Pyc"/>
+                            <exclude reference="wxw-9z-L1k"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Zmm-7g-Pyc"/>
+                            <include reference="wxw-9z-L1k"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="约谈 1.1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RW-gK-jO7">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-PI-ivz">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="zge-cn-WTo">
+                            <variation key="heightClass=regular-widthClass=compact" constant="299"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="zge-cn-WTo"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="zge-cn-WTo"/>
+                        </mask>
+                    </variation>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="y6v-PI-ivz" firstAttribute="top" secondItem="4RW-gK-jO7" secondAttribute="bottom" constant="10" id="3qS-0i-ml0"/>
+                <constraint firstItem="2if-hl-sxv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="4ys-LQ-rp6">
+                    <variation key="heightClass=regular-widthClass=compact" constant="90"/>
+                </constraint>
+                <constraint firstItem="4RW-gK-jO7" firstAttribute="centerX" secondItem="2if-hl-sxv" secondAttribute="centerX" id="b6E-fC-Yfk"/>
+                <constraint firstAttribute="trailing" secondItem="y6v-PI-ivz" secondAttribute="trailing" id="cRf-FK-89D"/>
+                <constraint firstItem="4RW-gK-jO7" firstAttribute="top" secondItem="2if-hl-sxv" secondAttribute="bottom" constant="30" id="fDK-sL-LRe">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="2if-hl-sxv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="prz-oQ-tid"/>
+                <constraint firstItem="y6v-PI-ivz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vLv-Uc-H0K"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="2if-hl-sxv"/>
+                    <exclude reference="4RW-gK-jO7"/>
+                    <exclude reference="y6v-PI-ivz"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="b6E-fC-Yfk"/>
+                    <exclude reference="fDK-sL-LRe"/>
+                    <exclude reference="4ys-LQ-rp6"/>
+                    <exclude reference="prz-oQ-tid"/>
+                    <exclude reference="3qS-0i-ml0"/>
+                    <exclude reference="cRf-FK-89D"/>
+                    <exclude reference="vLv-Uc-H0K"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="2if-hl-sxv"/>
+                    <include reference="4RW-gK-jO7"/>
+                    <include reference="y6v-PI-ivz"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="b6E-fC-Yfk"/>
+                    <include reference="fDK-sL-LRe"/>
+                    <include reference="4ys-LQ-rp6"/>
+                    <include reference="prz-oQ-tid"/>
+                    <include reference="3qS-0i-ml0"/>
+                    <include reference="cRf-FK-89D"/>
+                    <include reference="vLv-Uc-H0K"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="appIcon60" width="60" height="60"/>
+    </resources>
+</document>

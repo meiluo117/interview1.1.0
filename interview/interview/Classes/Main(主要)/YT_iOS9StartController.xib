@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YT_iOS9StartController">
+            <connections>
+                <outlet property="startImageView" destination="UHc-PR-dQ3" id="GfM-fx-gvp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UHc-PR-dQ3">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UHc-PR-dQ3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5QW-TB-SkM"/>
+                <constraint firstAttribute="trailing" secondItem="UHc-PR-dQ3" secondAttribute="trailing" id="d2J-jB-LA8"/>
+                <constraint firstItem="UHc-PR-dQ3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="goC-jL-Z0h"/>
+                <constraint firstAttribute="bottom" secondItem="UHc-PR-dQ3" secondAttribute="bottom" id="vny-vq-Zx5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="UHc-PR-dQ3"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5QW-TB-SkM"/>
+                    <exclude reference="d2J-jB-LA8"/>
+                    <exclude reference="goC-jL-Z0h"/>
+                    <exclude reference="vny-vq-Zx5"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="UHc-PR-dQ3"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5QW-TB-SkM"/>
+                    <include reference="d2J-jB-LA8"/>
+                    <include reference="goC-jL-Z0h"/>
+                    <include reference="vny-vq-Zx5"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

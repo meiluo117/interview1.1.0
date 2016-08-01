@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YT_RegisterController">
+            <connections>
+                <outlet property="createRegisterImage" destination="v7c-hL-f9Q" id="NjW-V2-wUm"/>
+                <outlet property="investorRegisterImage" destination="K4Z-HT-XAN" id="gQv-oE-wcv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhucechuangyetuandui" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-hL-f9Q">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="HzE-QO-Y4x">
+                            <variation key="heightClass=regular-widthClass=compact" constant="90"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HzE-QO-Y4x"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HzE-QO-Y4x"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhucetouziren" translatesAutoresizingMaskIntoConstraints="NO" id="K4Z-HT-XAN">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="p6f-0N-mMv">
+                            <variation key="heightClass=regular-widthClass=compact" constant="90"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="p6f-0N-mMv"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="p6f-0N-mMv"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="K4Z-HT-XAN" firstAttribute="top" secondItem="v7c-hL-f9Q" secondAttribute="bottom" constant="30" id="1aT-Sg-QDM"/>
+                <constraint firstAttribute="trailing" secondItem="K4Z-HT-XAN" secondAttribute="trailing" constant="20" id="4fN-JZ-Icw"/>
+                <constraint firstItem="K4Z-HT-XAN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="9MP-TU-439"/>
+                <constraint firstAttribute="trailing" secondItem="v7c-hL-f9Q" secondAttribute="trailing" constant="20" id="Gxc-Tc-12y"/>
+                <constraint firstItem="v7c-hL-f9Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Lbs-Pc-nuR"/>
+                <constraint firstItem="v7c-hL-f9Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="dtb-pZ-TJK">
+                    <variation key="heightClass=regular-widthClass=compact" constant="90"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="v7c-hL-f9Q"/>
+                    <exclude reference="K4Z-HT-XAN"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1aT-Sg-QDM"/>
+                    <exclude reference="4fN-JZ-Icw"/>
+                    <exclude reference="9MP-TU-439"/>
+                    <exclude reference="Gxc-Tc-12y"/>
+                    <exclude reference="Lbs-Pc-nuR"/>
+                    <exclude reference="dtb-pZ-TJK"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="v7c-hL-f9Q"/>
+                    <include reference="K4Z-HT-XAN"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1aT-Sg-QDM"/>
+                    <include reference="4fN-JZ-Icw"/>
+                    <include reference="9MP-TU-439"/>
+                    <include reference="Gxc-Tc-12y"/>
+                    <include reference="Lbs-Pc-nuR"/>
+                    <include reference="dtb-pZ-TJK"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="zhucechuangyetuandui" width="1187" height="305"/>
+        <image name="zhucetouziren" width="1187" height="305"/>
+    </resources>
+</document>
